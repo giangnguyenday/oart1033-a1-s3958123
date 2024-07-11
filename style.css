@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Grape Nuts', cursive;
+    color: #ae3923;
+    font-size: 40px;
+}
+
+body {
+    width: 100%;
+    background-color: #EDEAE1; 
+} 
+.section {
+    width: 100%;
+    height: 100vh; 
+}
+
+.text-blue {
+    color: #2856a1;
+}
+
+.text-blue span {
+    color: #2856a1;
+}
+
+#section-1 {
+    position: relative;
+}
+
+#title-poem {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title-poem path:nth-child(1) {
+    stroke-dasharray: 273px;
+    stroke-dashoffset: 273px;
+    animation: letter-animation 2s ease forwards 3s;
+
+}
+
+#title-poem path:nth-child(2) {
+    stroke-dasharray: 434px;
+    stroke-dashoffset: 434px;
+    animation: letter-animation 3s ease forwards 2.8s;
+
+}
+
+#title-poem path:nth-child(3) {
+    stroke-dasharray: 142px;
+    stroke-dashoffset: 142px;
+    animation: letter-animation 1.3s ease forwards 2.6s;
+
+}
+
+#title-poem path:nth-child(4) {
+    stroke-dasharray: 402px;
+    stroke-dashoffset: 402px;
+    animation: letter-animation 1.3s ease forwards 2.4s;
+}
+
+#title-poem path:nth-child(5) {
+    stroke-dasharray: 142px;
+    stroke-dashoffset: 142px;
+    animation: letter-animation 1.3s ease forwards 2.2s;
+}
+
+#title-poem path:nth-child(6) {
+    stroke-dasharray: 424px;
+    stroke-dashoffset: 424px;
+    animation: letter-animation 1.3s ease forwards 2s;
+}
+
+#title-poem path:nth-child(7) {
+    stroke-dasharray: 360px;
+    stroke-dashoffset: 360px;
+    animation: letter-animation 1.3s ease forwards 1.8s;
+}
+
+#title-poem path:nth-child(8) {
+    stroke-dasharray: 471px;
+    stroke-dashoffset: 471px;
+    animation: letter-animation 2s ease forwards 1.6s;
+}
+
+#title-poem path:nth-child(9) {
+    stroke-dasharray: 304px;
+    stroke-dashoffset: 304px;
+    animation: letter-animation 1.3s ease forwards 1.4s;
+}
+
+#title-poem path:nth-child(10) {
+    stroke-dasharray: 264px;
+    stroke-dashoffset: 264px;
+    animation: letter-animation 1.3s ease forwards 1.2s;
+}
+
+#title-poem path:nth-child(11) {
+    stroke-dasharray: 491px;
+    stroke-dashoffset: 491px;
+    animation: letter-animation 2s ease forwards 1s;
+}
+
+#title-poem path:nth-child(12) {
+    stroke-dasharray: 142px;
+    stroke-dashoffset: 142px;
+    animation: letter-animation 1.3s ease forwards 0.8s;
+}
+
+#title-poem path:nth-child(13) {
+    stroke-dasharray: 338px;
+    stroke-dashoffset: 338px;
+    animation: letter-animation 1.3s ease forwards 0.6s;
+}
+
+#title-poem path:nth-child(14) {
+    stroke-dasharray: 304px;
+    stroke-dashoffset: 304px;
+    animation: letter-animation 1.3s ease forwards 0.4s;
+}
+
+#title-poem path:nth-child(15) {
+    stroke-dasharray: 370px;
+    stroke-dashoffset: 370px;
+    animation: letter-animation 1.3s ease forwards 0.2s;
+}
+
+#title-poem path:nth-child(16) {
+    stroke-dasharray: 501px;
+    stroke-dashoffset: 501px;
+    animation: letter-animation 1.3s ease forwards 0s;
+}
+
+@keyframes letter-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#author-name {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    font-size: 56px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    color: #b22222;
+    opacity: 0;
+    opacity: 1 \9;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
+}
+
+.fade-in.one {
+    animation-delay: 3.5s;
+}
+
+.fade-in.two {
+    animation-delay: 3.7s;
+}
+
+.fade-in.three {
+    animation-delay: 3.9s;
+}
+
+.fade-in.four {
+    animation-delay: 4.1s;
+}
+
+.fade-in.five {
+    animation-delay: 4.3s;
+}
+
+.fade-in.six {
+    animation-delay: 4.5s;
+}
+
+.fade-in.seven {
+    animation-delay: 4.7s;
+}
+
+.fade-in.eight {
+    animation-delay: 4.9s;
+}
+
+.fade-in.nine {
+    animation-delay: 5.1s;
+}
+
+.fade-in.ten {
+    animation-delay: 5.3s;
+}
+
+.fade-in.eleven {
+    animation-delay: 5.5s;
+}
+
+.fade-in.twelve {
+    animation-delay: 5.7s;
+}
+
+.fade-in.thirteen {
+    animation-delay: 5.9s;
+}
+
+#section-2 {
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    transition: background-image 2s ease-in-out;
+
+}
+
+#bg-section-2 {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(section2/ba-om-chau-bg.png);
+    transition: background-image 2s ease-in-out;
+}
+
+#grandma-blue {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(section2/grandma-blue.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#grandma-red {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(section2/grandma-red.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s
+}
+
+#line-1-2 {
+    opacity: 0;
+    height: fit-content;
+    width: 55%;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#line-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#line-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.boom {
+    cursor: pointer;
+    color: #ae3923 !important;
+    
+}
+
+#bg-section-2,
+#grandma-blue,
+.line-1,
+.line-2 {
+    transition: opacity 1s ease-in-out;
+}
+
+span {
+    transition: color 1s ease-in-out;
+}
+
+#image-yellow-blue {
+    width: 100%;
+    height: 49vh;
+    background-image: url(section3/trans-yellow-to-blue.png);
+    background-size: contain;
+    background-position: center;
+}
+
+#section-3 {
+    background-color: #0B182D;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-snap-align: start;
+}
+
+.image-section-3 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: 75%;
+    background-position: center;
+}
+
+
+#flower-small {
+    background-image: url(section3/flower-small.png);
+    background-repeat: no-repeat;
+    animation: swing 6s infinite ease-in-out;
+    transform-origin: 33% 20%;
+}
+
+#flower-big {
+    background-image: url(section3/flower-big.png);
+    background-repeat: no-repeat;
+    animation: swing 6s infinite ease-in-out;
+    transform-origin: 47% 50%;
+}
+
+#bg-flower {
+    left: 10%;
+    background-image: url(section3/bg-flower.png);
+    width: 47%;
+    height: 51vh;
+    position: absolute;
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bg-kitchen {
+    right: 6%;
+    bottom: 0;
+    width: 62%;
+    height: 69vh;
+    position: absolute;
+    background-size: 75%;
+    background-position: center;
+    background-image: url(section3/bg-kitchen.png);
+    background-repeat: no-repeat;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+#line-3 {
+    opacity: 0;
+    margin: auto;
+    width: 65%;
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 20%;
+    text-align: end;
+    transform: translate(-50%, -50%);
+}
+#line-3 span,
+#line-4 span {
+    color: white;
+}
+
+#line-4 {
+    opacity: 0;
+    margin: auto;
+    width: 65%;
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 70%;
+    text-align: start;
+    transform: translate(-50%, -50%);
+}
+
+#section-4 {
+    background-color: #0B182D;
+    position: relative;
+}
+
+#line-5 {
+    opacity: 0;
+    height: fit-content;
+    width: 65%;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#line-5 span {
+    color: white;
+}
+
+#body-broke {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: 70%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(section4/body-disappear.gif);
+}
+
+
+#trans-blue-red {
+    position: absolute;
+    top: 86%;
+    background-image: url(section4/trans-red-to-nothing.png);
+    width: 100%;
+    height: 14vh;
+    background-position: bottom;
+    background-repeat-y: no-repeat;
+}
+
+#section-5 {
+    background-color: #ae3923;
+    position: relative;
+}
+
+#line-6 {
+    opacity: 0;
+    height: fit-content;
+    width: 65%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: white;
+}
+
+#line-6 span {
+    color: white;
+}
+
+#hand,
+#water-1,
+#water-2,
+#water-3,
+#water-in-hand {
+    right: 0%;
+    top: 50%;
+    width: 82%;
+    height: 100vh;
+    position: absolute;
+    background-size: 118%;
+    background-position: 100% 57%;
+    background-repeat: no-repeat;
+    transform: translate(0%, -50%);
+    transition: all 3s ease-out;
+}
+
+#hand {
+
+    background-image: url(section5/hand.png);
+}
+
+#water-1 {
+    background-image: url(section5/water-fall-1\(1\).png);
+    clip-path: circle(36% at 62% -47%);
+}
+
+#water-2 {
+    background-image: url(section5/water-fall-2.png);
+    clip-path: circle(39% at 57% 19%);
+    height: 100%;
+}
+
+#water-3 {
+    background-image: url(section5/water-fall-3.png);
+    clip-path: circle(39% at 69% 13%);
+    right: 1%;
+}
+
+#water-in-hand {
+    background-image: url(section5/water-in-hand.png);
+    clip-path: circle(36% at 62% 16%);
+}
+
+#section-6 {
+    background-color: #EDEAE1;
+    position: relative;
+    overflow: hidden;
+}
+
+#line-7-8 {
+
+    height: fit-content;
+    width: 65%;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#line-7 {
+    opacity: 0;
+}
+
+#line-8 {
+    opacity: 0;
+    text-align: end;
+}
+
+#lance,
+#human,
+#blood {
+    left: 50%;
+    top: 50%;
+    width: 65%;
+    height: 100vh;
+    position: absolute;
+    background-size: 100%;
+    /* background-position: 100% 57%; */
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+}
+
+#lance {
+    background-image: url(section6/lance.png);
+    animation-timing-function: ease-in-out;
+    animation-name: flying;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#click-lance {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+    width: 6%;
+    height: 56vh;
+    cursor: pointer;
+}
+
+#human {
+    background-image: url(section6/human.png);
+}
+
+#blood {
+    left: 22%;
+    background-image: url(section6/blood.png);
+    transition: scale 5s ease-in-out;
+    transform: scale(0);
+    top: 30%;
+    opacity: 1;
+}
+
+@keyframes flying {
+    0% {
+        /* transform: translateY(-50%); */
+    }
+
+    50% {
+        transform: translate(-50%, -55%);
+    }
+
+    100% {
+        /* transform: translateY(-50%); */
+    }
+}
+
+
+#section-7 {
+    height: 68vh;
+    background: linear-gradient(#EDEAE1, #ae3923 41% 104%);
+}
+
+#section-8 {
+    background-color: #EDEAE1;
+    height: 200vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#cloud-left,
+#cloud-right,
+#ground,
+#bycicle {
+    display: none;
+}
+
+#bycicle {
+    bottom: 95vh;
+    width: 109%;
+    position: absolute; 
+    Z-INDEX: 5;
+}
+
+
+#ground {
+    bottom: 100vh;
+    width: 100%;
+    position: absolute;
+    Z-INDEX: 4;
+}
+
+#cloud-left {
+    top: 3%;
+    left: 0%;
+    width: 66%;
+    position: absolute;
+    Z-INDEX: 3;
+
+}
+
+#cloud-right {
+    right: -44%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    Z-INDEX: 2;
+}
+
+#line-9 {
+
+    Z-INDEX: 1;
+    top: -17%;
+    width: 100%;
+    position: absolute;
+    color: #0B182D;
+    margin-top: 100vh;
+    text-align: center;
+}
+
+#section-9 {
+    background-color: #0B182D;
+    position: relative;
+    background-image: url(section9/bg.png);
+    background-position: center;    
+    background-size: contain;
+}
+
+#line-10 {
+    opacity: 0;
+    color: #EDEAE1;
+    text-align: center;
+    padding-top: 10%;
+    width: 100%;
+}
+
+#line-10 span {
+    color: white;
+}
+
+#boat {
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(section9/boat.png);
+    background-position: center;
+    position: absolute;
+}
+
+#shadow {
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(section9/star.png);
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#fire {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%) scale(0.6);
+}
+
+#section-10 {
+    background-color: #0B182D;
+    position: relative;
+    height: 200vh;
+    overflow: hidden;
+}
+
+#shadow-2 {
+    left: -10vh;
+    transform: scale(0.9);
+    position: absolute;
+    top: -15%;
+    z-index: 99;
+}
+
+#flower-2 {
+    background-image: url(section10/flower.png);
+    top: 14%;
+    width: 100%;
+    position: absolute;
+    left: 12%;
+    background-position: bottom;
+    height: 100vh;
+    z-index: 5;
+}
+
+#hand-2 {
+    background-image: url(section10/hand.png);
+    left: 12%;
+    background-position: bottom;
+    height: 100vh;
+    top: 14%;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+}
+
+#red-hand-back {
+    opacity: 0;
+    background-image: url(section10/hand-red-back.png);
+    left: 12%;
+    background-position: bottom;
+    height: 100vh;
+    top: 18%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#red-hand-front {
+    opacity: 0;
+    background-image: url(section10/hand-red-front.png);
+    left: 12%;
+    background-position: bottom;
+    height: 100vh;
+    top: 18%;
+    width: 100%;
+    position: absolute;
+    z-index: 6;
+}
+
+
+#shadow-2,
+#flower-2,
+#red-hand-back,
+#red-hand-front {
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+#line-11 {
+    opacity: 0;
+    height: fit-content;
+    width: 65%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: white;
+}
+
+#line-11 span {
+    color: white;
+}
+
+#line-12 {
+    opacity: 0;
+    height: fit-content;
+    width: 65%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: white;
+}
+
+#line-12 span {
+    color: white;
+}
+
+#section-11 {
+    background-color: #0B182D;
+    position: relative;
+    height: 150vh;
+    overflow: hidden;
+}
+
+#gras-1,
+#grass-2,
+#human-2,
+#star {
+    position: absolute;
+}
+
+#grass-1 {
+    top: 25%;
+    width: 100%;
+    position: absolute;
+    Z-INDEX: 5;
+}
+
+#grass-2 {
+    top: 50%;
+    width: 109%;
+    position: absolute;
+    Z-INDEX: 6;
+}
+
+#human-2 {
+    top: -12%;
+    width: 100%;
+    position: absolute;
+    Z-INDEX: 4;
+}
+
+#sky {
+    left: -7%;
+    top: -14%;
+    width: 107%;
+    position: absolute;
+    Z-INDEX: 1;
+}
+
+#line-13 {
+    opacity: 0;
+    height: fit-content;
+    width: 65%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: end;
+    color: white;
+}
+
+#line-13 span {
+    color: white;
+}
+
+#line-14 {
+    z-index: 5;
+    height: fit-content;
+    width: 65%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#section-12 {
+    position: relative;
+}
+
+#line-15 {
+    height: fit-content;
+    width: 100%;
+    font-size: 112px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.speaker {
+    position: fixed;
+    left: 10px; 
+    top: 10px;
+    cursor: pointer;
+  }
+.music{
+    display: none;
+  }
